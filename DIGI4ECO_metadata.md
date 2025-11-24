@@ -90,8 +90,6 @@ tests go to Implemented tests section). The mandatory column.
 | time_coverage_start          | Start date of the data in UTC                                                  | data_type#datetime       | true     | false    |
 | time_coverage_end            | End date of the data in UTC                                                    | data_type#datetime       | false    | false    |
 | update_interval              | Update interval (following ISO 8601), if not applicable `void`                 | data_type#str            | true     | false    |
-| emso_regional_facility       | EMSO Regional Facility name, required for EMSO data                            | oso_ontology#rf          | true     | true     |
-| emso_site                    | site code used, required for EMSO data                                         | oso_ontology#site        | true     | true     |
 | source                       | Platform type name, should be a L06 preferred label (prefLabel)                | sdn_vocab_pref_label#L06 | false    | false    |
 | platform_code                | OceanSITES platform code (leave blank if it does not exist)                    | data_type#str            | false    | true     |
 | wmo_platform_code            | WMO platform code (leave blank if it does not exist)                           | data_type#int            | false    | true     |
