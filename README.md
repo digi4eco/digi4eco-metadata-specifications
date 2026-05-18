@@ -11,7 +11,7 @@ compliant, high-quality datasets that are FAIR (Findable, Accessible, Interopera
 Several example datasets compliant with the latest version of the specifications are available at our [Example ERDDAP](https://netcdf-dev.obsea.es/es/erddap/index.html).
 
 <p align="center">
-  <img height="800x" src="https://github.com/digi4eco/digi4eco-metadata-specifications/blob/develop/images/sea-infographic.jpg?raw=true" alt="infographic">
+  <img height="800x" src="https://github.com/digi4eco/digi4eco-metadata-specifications/blob/main/images/sea-infographic.jpg?raw=true" alt="infographic">
 </p>
 
 ## Summary ##

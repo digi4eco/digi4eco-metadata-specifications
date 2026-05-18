@@ -1,4 +1,4 @@
-# DIGI4ECO Metadata Specification #
+# ERDDAP Metadata Specification #
 
 ## Introduction ##
 
@@ -52,7 +52,7 @@ for attributes, when multiple values are encoded into a single attribute, they s
 lists". Consecutive words in such a list are separated by one or more adjacent spaces.
 
 ```yaml
-  projects: "DIGI4ECODEV DIGI4ECO-Link ENVRI-FAIR"
+  projects: "DIGI4ECO ANERIS ENVRI-FAIR"
 ```
 
 In special circumstances a blank-separated list is not suitable, like in a list of author names. These cases, explicitly
