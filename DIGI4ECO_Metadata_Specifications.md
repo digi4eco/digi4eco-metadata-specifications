@@ -1,4 +1,4 @@
-# ERDDAP Metadata Specification #
+# DIGI4ECO Metadata Specification #
 
 ## Introduction ##
 
@@ -20,7 +20,7 @@ and operational domains.
 DIGI4ECO datasets are distributed as self-contained NetCDF files, which include both the data and all required metadata to
 ensure clarity, usability, and long-term accessibility. These files are structured to comply with the DIGI4ECO Metadata 
 Specification, enabling seamless use across various analysis platforms and data systems. In addition to file-based 
-access, the same datasets are made available through [DIGI4ECO's ERDDAP](https://erddap.emso.eu/erddap), a data server that
+access, the same datasets are made available through [DIGI4ECO's ERDDAP](https://erddap.digi4eco.eu/erddap), a data server that
 exposes the contents of NetCDF files via standardized web services and user-friendly interfaces. This dual approach
 allows users to either download complete files or access data subsets and metadata dynamically through ERDDAP’s RESTful 
 API.
@@ -101,10 +101,6 @@ tests go to Implemented tests section). The mandatory column.
 | time_coverage_start             | Start date of the data in UTC                                                                                                                                                     | data_type#datetime       | true     | false    |
 | time_coverage_end               | End date of the data in UTC                                                                                                                                                       | data_type#datetime       | false    | false    |
 | update_interval                 | Update interval (following ISO 8601), if not applicable `void`                                                                                                                    | data_type#str            | true     | false    |
-| emso_regional_facility_uri      | DIGI4ECO Regional Facility URI, required for DIGI4ECO data                                                                                                                                | oso_ontology_uri#rf      | true     | false    |
-| emso_regional_facility_name     | DIGI4ECO Regional Facility name, required for DIGI4ECO data                                                                                                                               | oso_ontology_name#rf     | true     | false    |
-| emso_site_uri                   | site code used, required for DIGI4ECO data                                                                                                                                            | oso_ontology_uri#site    | true     | true     |
-| emso_site_name                  | site code used, required for DIGI4ECO data                                                                                                                                            | oso_ontology_name#site   | true     | true     |
 | source                          | Platform type name, should be a L06 preferred label (prefLabel)                                                                                                                   | sdn_vocab_pref_label#L06 | false    | false    |
 | data_type                       | Type of data, in most cases 'OceanSITES data time-series data'                                                                                                                    | oceansites_data_type     | false    | false    |
 | network                         | List of the networks                                                                                                                                                              | data_type#str            | true     | true     |
@@ -423,8 +419,6 @@ The following attributes are expected in `platform` variables:
 | platform_type_name  | Platform type L06 preferred label                                 | sdn_vocab_pref_label#L06   | true     | false    |
 | platform_type_urn   | Platform type L06 URN                                             | sdn_vocab_urn#L06          | true     | false    |
 | platform_type_uri   | Platform type L06 URI                                             | sdn_vocab_uri#L06          | true     | false    |
-| emso_platform_name  | Link to the platform entry in OSO ontology                        | oso_ontology_name#platform | true     | false    |
-| emso_platform_uri   | Link to the platform entry in OSO ontology                        | oso_ontology_uri#platform  | true     | false    |
 | wmo_platform_code   | World Meteorological Organization (WMO) platform code             | data_type#str              | false    | false    |
 | wsi_platform_code   | (WIGOS Station Identifier)[https://community.wmo.int/wigos-station-identifiers] | data_type#str | false | false |
 | platform_reference  | Link to additional information                                    | data_type#uri              | false    | false    |

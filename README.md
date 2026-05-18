@@ -1,4 +1,4 @@
-
+[![DOI](https://zenodo.org/badge/670238977.svg)](https://zenodo.org/doi/10.5281/zenodo.10669878)
 
 # DIGI4ECO Metadata Specifications #
 
@@ -6,12 +6,12 @@ This repository defines the [DIGI4ECO Metadata Specifications](https://github.co
 Its primary goal is to  establish a consistent, interoperable, and machine-actionable metadata framework for all data within the DIGI4ECO research infrastructure, ensuring 
 long-term usability and broad discoverability. This specification provides the foundational metadata layer for the DIGI4ECO data ecosystem, guiding data providers to create 
 compliant, high-quality datasets that are FAIR (Findable, Accessible, Interoperable, and Reusable). The latest version of the specifications can be accessed 
-[here](https://github.com/emso-eric/emso-metadata-specifications/blob/main/DIGI4ECO_Metadata_Specifications.md).
+[here](https://github.com/digi4eco/digi4eco-metadata-specifications/blob/main/DIGI4ECO_Metadata_Specifications.md).
 
 Several example datasets compliant with the latest version of the specifications are available at our [Example ERDDAP](https://netcdf-dev.obsea.es/es/erddap/index.html).
 
 <p align="center">
-  <img height="800x" src="https://github.com/emso-eric/emso-metadata-specifications/blob/develop/images/sea-infographic.jpg?raw=true" alt="infographic">
+  <img height="800x" src="https://github.com/digi4eco/digi4eco-metadata-specifications/blob/develop/images/sea-infographic.jpg?raw=true" alt="infographic">
 </p>
 
 ## Summary ##

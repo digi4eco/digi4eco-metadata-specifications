@@ -1,6 +1,6 @@
 # Keywords
 
-Within EMSO ERIC, the keyword strategy builds on OceanSITES standards and extends them to support multiple controlled vocabularies. Keywords are used to describe the thematic, observational, and technical content of a dataset.
+Within DIGI4ECO, the keyword strategy builds on OceanSITES standards and extends them to support multiple controlled vocabularies. Keywords are used to describe the thematic, observational, and technical content of a dataset.
 
 All keywords **must be selected from controlled vocabularies** (no free-text keywords are allowed).
 
@@ -102,7 +102,7 @@ Examples include:
   - **Thematic keywords** (e.g., GCMD, GEMET, EuroSciVoc)
   - **Parameter keywords** (e.g., SeaDataNet P02, CF)
   - **Platform/device keywords** (e.g., L22, L05, L06)
-  - **EMSO-specific concepts** (OSO)
+  - **DIGI4ECO-specific concepts** (OSO)
 
 ---
 
