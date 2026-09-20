@@ -12,7 +12,7 @@ import pandas as pd
 
 import hashlib
 
-emso_branch = "develop"
+digi4eco_branch = "main"
 
 sdn_vocab_p01_url = "https://vocab.nerc.ac.uk/downloads/publish/P01.json"
 sdn_vocab_p02_url = "https://vocab.nerc.ac.uk/collection/P02/current/?_profile=nvs&_mediatype=application/ld+json"
@@ -40,10 +40,9 @@ dwc_terms_url = "https://raw.githubusercontent.com/tdwg/dwc/refs/heads/master/vo
 
 edmo_codes_jsonld = ".temp/edmo_codes_jsonld.json"
 
-oso_ontology_url = "https://raw.githubusercontent.com/emso-eric/oso-ontology/refs/heads/main/OSO.ttl"
 
-oceansites_codes_url = f"https://raw.githubusercontent.com/emso-eric/emso-metadata-specifications/{emso_branch}/external-resources/oceansites/OceanSites_codes.md"
-datacite_codes_url = f"https://raw.githubusercontent.com/emso-eric/emso-metadata-specifications/{emso_branch}/external-resources/datacite/DataCite_codes.md"
+oceansites_codes_url = f"https://raw.githubusercontent.com/digi4eco/digi4eco-metadata-specifications/{digi4eco_branch}/external-resources/oceansites/OceanSites_codes.md"
+datacite_codes_url = f"https://raw.githubusercontent.com/digi4eco/digi4eco-metadata-specifications/{digi4eco_branch}/external-resources/datacite/DataCite_codes.md"
 
 
 def get_file_md5(filename):
@@ -314,7 +313,6 @@ if __name__ == "__main__":
     copernicus_params_file = os.path.join(".temp", "copernicus_param_list.xlsx")
     cf_std_name_units_file = os.path.join(".temp", "standard_name_units.xml")
     dwc_terms_file = os.path.join(".temp", "dwc_terms.csv")
-    oso_ontology_file = os.path.join(".temp", "oso.ttl")
     spdx_licenses_file = os.path.join(".temp", "spdx_licenses.md")
 
     sdn_vocab_p01_file = os.path.join(".temp", "sdn_vocab_p01.json")
@@ -342,7 +340,6 @@ if __name__ == "__main__":
         [copernicus_param_list, copernicus_params_file, "spdx licenses"],
         [cf_standard_name_units_url, cf_std_name_units_file, "CF units"],
         [dwc_terms_url, dwc_terms_file, "DwC terms"],
-        [oso_ontology_url, oso_ontology_file, "OSO"],
         [spdx_licenses_github, spdx_licenses_file, "spdx licenses"]
 
     ]
@@ -372,8 +369,8 @@ if __name__ == "__main__":
     sdn_vocabs_broader = {}
     sdn_vocabs_related = {}
 
-    source_url = f"https://raw.githubusercontent.com/emso-eric/emso-metadata-specifications/refs/heads/{emso_branch}/external-resources/"
-    base_url = f"https://raw.githubusercontent.com/emso-eric/emso-metadata-specifications/refs/heads/{emso_branch}/"
+    source_url = f"https://raw.githubusercontent.com/digi4eco/digi4eco-metadata-specifications/refs/heads/{digi4eco_branch}/external-resources/"
+    base_url = f"https://raw.githubusercontent.com/digi4eco/digi4eco-metadata-specifications/refs/heads/{digi4eco_branch}/"
 
     # ======== Process SeaDataNet / BODC Vocabularies ========#
     # Process raw SeaDataNet JSON-ld files and store them sliced in short JSON files
@@ -445,9 +442,9 @@ if __name__ == "__main__":
     rich.print("[green]done!")
 
     # ======== DataCite codes =========#
-    rich.print("Adding EMSO_Metadata_Specifications codes...", end="")
-    filename = "EMSO_Metadata_Specifications.md"
-    resources["EMSO_Metadata_Specifications"] = {
+    rich.print("Adding DIGI4ECO_Metadata_Specifications codes...", end="")
+    filename = "DIGI4ECO_Metadata_Specifications.md"
+    resources["DIGI4ECO_Metadata_Specifications"] = {
         "md": base_url + filename,
         "hash": get_file_md5("../" + filename)
     }

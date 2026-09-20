@@ -11,6 +11,9 @@ accepted community standards, the specification draws upon established conventio
 [SeaDataNet](https://archimer.ifremer.fr/doc/00454/56547/). By adhering to these formats, DIGI4ECO ensures that its data
 products are readily compatible with international marine data repositories and processing tools.
 
+The DIGI4ECO standards are based on the [EMSO ERIC Metadata Specifications](https://github.com/emso-eric/emso-metadata-specifications),
+adapted to the scope and requirements of the DIGI4ECO project.
+
 This document outlines both the general conventions and the specific global attributes necessary for ERDDAP-compliant
 datasets in the DIGI4ECO framework. The goal is not only to enforce metadata quality and completeness but also to streamline 
 validation and integration through defined compliance checks. While preserving flexibility where appropriate, the 
@@ -465,8 +468,6 @@ Description of the compliance tests:
 * **sdn_vocab_uri#vocab_id**: Resolvable URI for a SDN vocabulary Term
 * **contributor_types**: Complies with the DataCite's metadata kernel contributor roles
 * **contributor_names**: Makes sure that for every contributor name there is a contributor type
-* **oso_ontology_uri#type**: Valid URI from the OSO ontology. Possible arguments are `rf` (Regional Facility), `site` and `platform`.
-* **oso_ontology_name#type**: Valid preferred label from the OSO ontology. Possible arguments are `rf` (Regional Facility), `site` and `platform`.
 * **equals#value**: Checks if the attribute equals to the expected value (any string)
 * **oceansites_data_type**: Valid [OceanSITES data type](https://github.com/digi4eco/digi4eco-metadata-specifications/blob/main/external-resources/oceansites/OceanSites_codes.md) value.
 * **oceansites_data_mode**: Valid [OceanSITES data mode](https://github.com/digi4eco/digi4eco-metadata-specifications/blob/main/external-resources/oceansites/OceanSites_codes.md) value (R, P, D, M).

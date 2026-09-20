@@ -7,6 +7,9 @@ long-term usability and broad discoverability. This specification provides the f
 compliant, high-quality datasets that are FAIR (Findable, Accessible, Interoperable, and Reusable). The latest version of the specifications can be accessed 
 [here](https://github.com/digi4eco/digi4eco-metadata-specifications/blob/main/DIGI4ECO_Metadata_Specifications.md).
 
+The DIGI4ECO standards are based on the [EMSO ERIC Metadata Specifications](https://github.com/emso-eric/emso-metadata-specifications),
+adapted to the scope and requirements of the DIGI4ECO project.
+
 Several example datasets compliant with the latest version of the specifications are available at our [Example ERDDAP](https://netcdf-dev.obsea.es/es/erddap/index.html).
 
 <p align="center">
@@ -21,7 +24,7 @@ Several example datasets compliant with the latest version of the specifications
 * **Rich Semantics**: Emphasizes the use of controlled vocabularies (e.g., NERC Vocabularies, OSO, EDMO, ROR) and unique identifiers (URIs, URNs) to provide unambiguous, resolvable, and human-readable metadata.
 
 ### Key Specifications:
-* **Global Attributes**: Defines a comprehensive set of mandatory and optional global attributes for every dataset. These cover critical information such as spatio-temporal coverage, responsible institutions, projects, licensing, and DIGI4ECO-specific identifiers (Regional Facility, Site).
+* **Global Attributes**: Defines a comprehensive set of mandatory and optional global attributes for every dataset. These cover critical information such as spatio-temporal coverage, responsible institutions, projects, licensing and dataset identifiers.
 * **Variable Typing & Structure**: Introduces a `variable_type` attribute to categorise variables (e.g., coordinate, environmental, biological, quality_control, sensor, platform). Each type has a tailored set of required attributes, ensuring appropriate metadata for different kinds of data.
 * **Controlled Vocabularies**: Mandates the use of specific controlled vocabularies for parameters, units, platform types, sensor models, and institutions. Metadata must include the human-readable name, URI, and URN for relevant terms.
 * **Compliance & Validation**: The specification is designed to be validatable. Each attribute is associated with a compliance test (e.g., `data_type#str`, `cf_standard_name`, `edmo_code`), enabling automated checks to ensure dataset conformity.
@@ -34,7 +37,7 @@ Several example datasets compliant with the latest version of the specifications
 
 
 # Contact info #
-* **version**: v1.0.7
+* **version**: v1.0.8
 * **author**: Enoc Martínez  
 * **contributors**: Enoc Martínez 
 * **organization**: Universitat Politècnica de Catalunya (UPC)

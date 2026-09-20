@@ -1,16 +1,16 @@
-# EMSO Data Processing Levels (Draft)
+# DIGI4ECO Data Processing Levels (Draft)
 
 > ⚠️ **This document describes ongoing work.**  
-> Definitions and conventions may evolve as discussions progress within EMSO ERIC.
+> Definitions and conventions may evolve as discussions progress within DIGI4ECO.
 
 ## Introduction
 
-In ocean observing systems like EMSO, data are collected from a wide range of instruments deployed across different sites and environments. These instruments produce measurements that typically undergo multiple processing steps before they can be reliably used for scientific analysis.
+In ocean observing systems like DIGI4ECO, data are collected from a wide range of instruments deployed across different sites and environments. These instruments produce measurements that typically undergo multiple processing steps before they can be reliably used for scientific analysis.
 
 **Processing levels** provide a structured way to describe the overall maturity of a dataset, from acquisition to scientifically validated products. They help to:
 
 - Ensure transparency in data handling  
-- Improve interoperability across EMSO nodes and external infrastructures  
+- Improve interoperability across DIGI4ECO nodes and external infrastructures  
 - Allow users to assess the fitness-for-purpose of datasets  
 - Enable traceability of processing applied to the data  
 
@@ -20,7 +20,7 @@ In addition, **processing steps** provide a detailed trace of the transformation
 
 ## Definition of L0 (Raw Data)
 
-In EMSO, **L0 data represent raw scientific observations expressed in physical units**.
+In DIGI4ECO, **L0 data represent raw scientific observations expressed in physical units**.
 
 L0 data **must**:
 - Be expressed in physical units (e.g. °C, dbar, PSU)  
@@ -79,11 +79,11 @@ Typical characteristics include:
 - Comparison with climatological datasets  
 - Correction of sensor drift and offsets  
 
-> ⚠️ L2 definitions are still being refined and are not yet fully standardized across EMSO.
+> ⚠️ L2 definitions are still being refined and are not yet fully standardized across DIGI4ECO.
 
 ---
 
-## Usage in EMSO Metadata
+## Usage in DIGI4ECO Metadata
 
 Processing information is encoded using the following global attributes:
 

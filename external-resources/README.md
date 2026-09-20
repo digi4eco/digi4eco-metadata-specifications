@@ -1,8 +1,8 @@
-# EMSO Metadata Specifications External Resources #
-The EMSO metadata specifications builds on top of previous initiatives like SeaDataNet/NVS vocabularies, Copernicus, 
+# DIGI4ECO Metadata Specifications External Resources #
+The DIGI4ECO metadata specifications builds on top of previous initiatives like SeaDataNet/NVS vocabularies, Copernicus, 
 OceanSITES and DataCite metadata kernel among others. In the past we experienced severe issues when relying on 
 third-party services to download their source files. Thus, a clean CSV-formatted copy of some of their documents is 
-stored here to ensure the functionality of EMSO downstream services. The `update_resources.py` script downloads and
+stored here to ensure the functionality of DIGI4ECO downstream services. The `update_resources.py` script downloads and
 format a new version of the documents.
 
 The following resources can be found inside this folder:
